@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Adicionar Prato</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Adicionar Prato</h1>
+    <form id="addDishForm" class="form">
+      <div class="field">
+        <label class="label" for="dishName">Nome do Prato</label>
+        <input type="text" id="dishName" class="input" required>
+      </div>
+      <div class="field">
+        <label class="label" for="dishDescription">Descrição</label>
+        <textarea id="dishDescription" class="input" required></textarea>
+      </div>
+      <div class="field">
+        <label class="label" for="dishPrice">Preço</label>
+        <input type="number" id="dishPrice" class="input" step="0.01" required>
+      </div>
+      <div class="field">
+        <button type="submit" class="button">Adicionar</button>
+        <button type="reset" class="button">Limpar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
